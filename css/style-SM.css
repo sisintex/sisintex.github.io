@@ -61,14 +61,14 @@ section{
 
 .section-cont .img1{
     float:right;
-    margin-top: 45px;
+    margin-top: 40px;
     transform: rotateY(180deg);
 }
 
 .section-cont .text{
     color: #3edbbc;
     float:center;
-    margin-top: 20px;
+    margin-top: 35px;
     padding: 5px;
     text-align: center;
     padding-bottom: 20px;
