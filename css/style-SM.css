@@ -1,0 +1,142 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size:15px;
+    -webkit-font-smoothing: subpixel-antialiased!important;
+    color:#000000;
+    font-weight:400;
+    height:100%;
+    width: 100%;
+}
+
+::selection {
+    background: #4e5963;
+    color:#3edbbc;
+}
+
+header{
+    background: #788897;
+    width: 100%;
+    height: 90px;
+}
+
+header .header-cont{
+    width: 100%;
+    margin: 0px auto;
+
+}
+
+header .header-cont .logo{
+    padding-top: 1.5%;
+    padding-left: 15%;
+    float: left;
+}
+
+header .header-cont .title{
+    float: right;
+    font-size: 20px;
+    padding-top: 2.5%;
+    padding-right: 15%;
+    color: white;
+    
+}
+
+section{
+    position:relative;
+    width:100%;
+    height:500px;
+    background-color: #ffffff;
+}
+
+.section-cont{
+    position: absolute;
+    width: 66%;
+    height: 100%;
+    margin-left: 17%;
+}
+
+.section-cont .img1{
+    float:right;
+    margin-top: 45px;
+    transform: rotateY(180deg);
+}
+
+.section-cont .text{
+    color: #3edbbc;
+    float:center;
+    margin-top: 20px;
+    padding: 5px;
+    text-align: center;
+    padding-bottom: 20px;
+    border-top: 1px solid #788897;
+    border-bottom: 1px solid #788897;
+    
+}
+
+ul{
+    color: #424c55;
+    text-align: left;
+}
+
+
+.section-cont .back{
+    margin-top:2%;
+    text-align: center;
+    width:183px;
+    height:47px;
+    line-height:47px;
+    border:1px solid #3edbbc;
+    text-transform:uppercase;
+    color:#22272b;
+    cursor:pointer;
+    font-size:18px;
+    background:none;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+  
+.section-cont .back:hover{
+    color:#ffffff;
+    background:#2f363e;
+    border: 2px solid #2f363e ;
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #2f363e;
+    height: 90px;
+}
+
+footer .margin{
+    width: 66%;
+    margin: 0px auto;
+}
+
+.margin .sociales{
+    padding-top: 40px;
+    color:#5f666e;
+}
+
+.margin .sociales a{
+    color: #707a85;
+    margin-right: 20px;
+}
+
+.margin .sociales a:hover{
+    color:white;
+}
+
+.margin .copyright{
+    float:right;
+    color:#707a85;
+}

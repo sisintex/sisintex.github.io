@@ -1,0 +1,574 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body {
+    background-color: #e7e7e7;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+#container{
+    width: 100%;
+    margin: 0px auto;
+}
+
+.cabecera{
+    position:relative;
+    height: 100px;
+    width: 100%;
+}
+
+.cabecera .logoSX{
+    float: left;
+    width: 2cm;
+    height: 1.25cm;
+    margin-top: 25px;
+    margin-left: 80px;
+    margin-right: 10%;
+}
+
+
+.cabecera .perfil{
+    float: left;
+    width:  70%;
+    height: 35px;
+    margin-top: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid green;
+}
+
+.logop{
+    float: left;
+    margin-right: 10px;
+    margin-top:5px ;
+}
+
+.nombreUS{
+    float:left;
+    margin-top: 10px;
+    color: green;
+    font-size: 18px;
+}
+.help{
+    float: right;
+    list-style: none;
+    display: flex;
+    margin-top: 15px;
+    
+}
+.help a{
+    color: green;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.help a:hover{
+    color: #31373d;
+}
+
+
+
+/*nav*/
+
+nav{
+    float: left;
+    width: 15%;
+    height: 400px;
+    background-color: #e7e7e7;
+    margin-left: 25px;
+    border-right: 2px solid green;
+    margin-top: 0%;
+    
+}
+nav .options{
+    margin-top: 60px;
+    margin-left: 5px;
+    margin-right: 23px;
+    height: 150px;
+}
+.options ul{
+    width: 90%;
+    margin: auto;
+    list-style: none;
+}
+.options ul li{
+    border: 1px solid green;
+    width: 100%;
+    margin-bottom: 13px;
+}
+
+.options li label{
+    color: green;
+    font-size: 16px;
+    text-align: center;
+    display: block;
+    padding: 5px 0px;
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+
+.options li label:hover{
+    background: #0080006c;
+    color: white;
+}
+
+
+/*contenido*/
+
+section{
+    position: relative;
+    float: right;
+    width:80%;
+    height: 500px;
+    margin-top: 10px;
+    margin-right: 2%;
+}
+
+section article{
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    transition: all 600ms ease;
+    opacity:0;
+    visibility:hidden;
+    transform: scale(0.98);
+    background: #7888975b;
+    
+}
+
+#radio1, #radio2, #radio3{
+    display: none;
+}
+
+#radio1:checked ~ .inventario,
+#radio2:checked ~ .urdimbres,
+#radio3:checked ~ .facturacion{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+
+/* seccion imventario */
+
+.inventario{
+    padding: 5px;
+}
+
+.inventario .titulo{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #788897;
+}
+
+.inventario .moduloZ{
+    float: top;
+    margin-top: 10p;
+    padding: 10px 0px;
+    background: #788897a6;
+    text-align: center;
+}
+
+.inventario .moduloZ input{
+    width: 100px;
+    height: 20px;
+    border: none;
+}
+.inventario .moduloZ select{
+    width: 100px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.inventario .form-control7{
+    color: #ff0909;
+    cursor: pointer;
+}
+.inventario .form-control7:hover{
+    color: white;
+    background: #ff0000b4;
+}
+
+
+.inventario .form-control8{
+    color: green;
+    cursor: pointer;
+}
+.inventario .form-control8:hover{
+    color: white;
+    background: #008000b4;
+}
+
+
+
+.buscador{
+    float:right;
+    margin-right: 35px;
+    margin-top: 20px;
+}
+
+.buscador .referencia{
+    width: 10%;
+}
+
+.buscador .buscar{
+    cursor: pointer;
+}
+
+.tabla{
+    color: white;
+    text-align: center;
+    line-height: 350px;
+    height: 330px;
+    width: 90%;
+    margin-top: 50px;
+    margin-left: 5%;
+    border: 1px solid white;
+}
+
+/*seccion urdimbre*/
+
+.urdimbres{
+    padding: 5px;
+   
+}
+
+.urdimbres .titulo{
+    text-align: center;
+    margin-bottom: 5px;
+    color: #788897;
+    margin-top: 20px;
+}
+
+.urdimbres .moduloX{
+    margin-top: 10px;
+    padding: 15px 0px;
+    background: #788897a6;
+    width: 20%;
+    text-align: center;
+    margin-left: 40%;
+    margin-top: 30px;
+}
+
+.moduloX select {
+    width: 80%;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+table{
+   background: #ffffffc2;
+   color: #51585f8a;
+   table-layout: fixed;
+   width: 70%;
+   height: 200px;
+   border-collapse: collapse;
+   text-align: center;
+   margin-left: 15%;
+   margin-top: 35px;
+}
+
+tbody tr{
+    font-size: 80%;
+}
+
+caption{
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+thead tr th{
+    padding-top: 10px;
+}
+
+
+/*seccion facturacion*/
+
+.facturacion{
+    padding: 5px;
+}
+
+.facturacion .titulo{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #788897;
+}
+
+.modulo1{
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    background: #7888976b;
+    width: 20%;
+    height: 420px;
+    float: left;    
+    margin-left: 20px;
+}
+
+
+.modulo1.cliente{
+    float: top;
+    margin-top: 5px;
+    padding: 10px 10px;
+    background: #7b8996a6;
+    width: 90%;
+    text-align: center;
+    margin-left: 4%;
+}
+
+.cliente input{
+    border: none;
+    width: 80%;
+    height: 20px;
+    margin-bottom: 5px;
+}
+
+.modulo1 p{
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.modulo1 .botones{
+   padding-top: 240px;
+}
+
+.botones form input{
+    border: 1px solid;
+    margin-left: 2px;
+}
+
+.bot-cancel{
+    color: #ff0000;
+    background: #fde6e6;
+}
+.bot-cancel:hover{
+    color: white;
+    background: #ff0000b4;
+    border: 1px solid #ff0000b4;
+    cursor: pointer;
+}
+
+.bot-ger{
+    color: green;
+}
+.bot-ger:hover{
+    color: white;
+    background: #008000b4;
+    border: 1px solid #008000b4;
+    cursor: pointer;
+}
+
+.modulo2{
+    width: 32%;
+    height: 442px;
+    float: left;
+    text-align: center;
+    margin-left: 2%;
+    border: 1px solid white;
+}
+
+.modulo2 p{
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.modulo2 .bot-agr{
+    cursor: pointer;
+}
+
+.modulo2 .img-añadir{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.modulo3{
+    background: #ffffff8f;
+    width: 40%;
+    min-width: 30%;
+    height: 444px;
+    float: right;
+    margin-right: 2%;
+
+}
+
+.modulo3 caption{
+    color: black;
+}
+
+.modulo3 table{
+    background: #ffffff31;
+    margin-left: 5%;
+    table-layout: fixed;
+    width: 90%;
+    margin-top: 10px;
+    height: 88%;
+}
+
+.modulo3 thead .th1{
+    width: 23%;
+}
+
+
+
+/*pie*/
+ 
+footer{
+    float: left;
+    border-right: 2px solid green;
+    border-bottom: 2px solid green;
+    background: #e7e7e7;
+    height: 140px;
+    width: 15%;
+    margin-left: 25px;
+}
+#logoaf{
+    padding-left: 40px;
+    padding-top: 40px;
+}
+#textopie1{
+    font-kerning: inherit;
+    color: green;
+    padding-left: 30px;
+}
+.textopie2{
+    color: #333333;
+    padding-left: 10px;
+}
+
+
+
+
+@media screen and (max-width:1000px){
+    .cabecera .logoSX{ 
+        float: center;
+        width: 2cm;
+        height: 1.25cm;
+        margin-top: 15px;
+        margin-left: 45%;
+        padding: 0%;}
+    .cabecera .perfil{ 
+        width: 90%;
+        height: 35px;
+        border-bottom: 2px solid green;
+        margin-top: 50px;
+        margin-left: 4%;}
+    nav{
+        width: 90%;
+        height: 60px;
+        margin-top: 0px;
+        border: none; }
+    .options ul{
+        float:left;
+        width: 100%;
+        border-bottom: 2px solid green;
+        list-style: none;
+        display: flex;
+        padding: 0;}
+    .options ul li{
+        border: 1px solid green;
+        width: 100%;
+        margin-right: 13px;}
+    .options li label{
+        font-size: 14px;}
+    section{
+        position: relative;
+        width:100%;
+        height: 520px;
+        margin-top: 50px;
+        padding: 0%;
+        margin-right: 0;}
+    section article{
+        position: absolute;
+        width: 96.5%;
+        height: 500px;
+        transition: all 600ms ease;
+        opacity:0;
+        visibility:hidden;
+        transform: scale(0.98);
+        background: #7888975b;
+        margin: 5px 16px auto;}
+    footer{
+        float: center;
+        margin-top: 25px;
+        background: #78889728;
+        height: 50px;
+        width: 100%;
+        border: none;
+        display: flex;
+        margin-left: 0;}
+    #logoaf{
+        margin-left: 20px;
+        margin-top: 5px;
+        padding: 0;}
+    #textopie1{
+        color: green;
+        margin-top: 5px;
+        padding: 0;
+        margin-left: 15px;}
+    .textopie2{
+        color: #333333;
+        margin-top: 25px;
+        padding:0 ;
+        margin-left: -80px;}
+}
+
+@media screen and (max-width:875px){
+    
+    .moduloZ form input{
+        margin-bottom: 5px;}
+    .moduloZ form select{
+        margin-bottom: 5px;}
+}
+
+@media screen and (max-width:800px){
+    .modulo1{
+        background: #7888976b;
+        width: 95%;
+        height: 70px;}
+    .modulo1 .cliente input{
+        width: 20%;}
+    .modulo1 p{
+        margin-bottom: 5px;}
+    .modulo2{
+        margin-top:15px;
+        width: 45%;
+        height: 300px;}
+    .modulo1 .botones{
+        padding-top: 340px;}
+    .modulo3{
+        margin-top:15px;
+        width: 45%;
+        height: 300px;}
+    .modulo3 table{
+        background: #ffffff31;
+        width: 90%;
+        margin-top: 10px;
+        height: 230px;}
+}
+
+@media screen and (max-width:632px){
+    .cabecera{
+        height: 70px;
+        width: 100%;}
+    .cabecera .logoSX{ 
+        float: center;
+        width: 2cm;
+        height: 1.25cm;
+        margin-top: 15px;
+        margin-left: 45%;
+        padding: 0%;}
+    .cabecera .perfil{ 
+        width: 90%;
+        height: 35px;
+        border-bottom: 2px solid green;
+        margin-top: 50px;
+        margin-left: 4%;}
+    .productos .bot-ref{
+        width: 50%;
+    }
+}
