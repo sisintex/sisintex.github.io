@@ -1,0 +1,147 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size:15px;
+    -webkit-font-smoothing: subpixel-antialiased!important;
+    color:#000000;
+    font-weight:400;
+    height:100%;
+    width: 100%;
+}
+
+::selection {
+    background: #4e5963;
+    color:#3edbbc;
+}
+
+header{
+    background: #788897;
+    width: 100%;
+    height: 90px;
+}
+
+header .header-cont{
+    width: 100%;
+    margin: 0px auto;
+
+}
+
+header .header-cont .logo{
+    padding-top: 1.5%;
+    padding-left: 15%;
+    float: left;
+}
+
+header .header-cont .title{
+    float: right;
+    font-size: 20px;
+    padding-top: 2.5%;
+    padding-right: 15%;
+    color: white;
+}
+
+nav{
+    float: center;
+    width: 70%;
+    background-color: #ffffff;
+    margin-left: 25px;
+    border-top: 2px solid green;
+    border-bottom: 2px solid green;
+    margin-top: 40px;
+    margin-left: 15%;
+}
+
+nav .title .gif{
+    float: right;
+}
+
+nav .title .titulo{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    color:  rgb(61, 194, 154);
+    font-size: 50px;
+ 
+}
+
+.preguntas ul{
+    margin-top:20px;
+    width: 100%;
+    list-style: none;
+}
+.preguntas ul li{
+    width: 100%;
+    margin-bottom: 13px;
+}
+
+.preguntas li label{
+    color: rgb(114, 116, 228);
+    font-size: 20px;
+    text-align: left;
+    display: block;
+    padding: 3px 0px;
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+
+.preguntas li label:hover{
+    background-color: #78889723;
+    color: rgb(0, 0, 0);
+}
+
+section{
+    width:70%;
+    height:100%;
+    margin-left: 15%;
+    margin-top: 35px;
+}
+
+section article{
+    background-color:#8fa1b305;
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+section article .titulo{
+    padding: 3%;
+    font-size: 16px;
+    background-color: #41d1c549;
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    float: center;
+    width: 100%;
+    height: 90px;
+    background: #2f363e;
+}
+
+footer .margin{
+    width: 66%;
+    margin: 0px auto;
+}
+
+.margin .sociales{
+    padding-top: 40px;
+    color:#5f666e;
+}
+
+.margin .sociales a{
+    color: #707a85;
+    margin-right: 20px;
+}
+
+.margin .sociales a:hover{
+    color:white;
+}
+
+.margin .copyright{
+    float:right;
+    color:#707a85;
+}
